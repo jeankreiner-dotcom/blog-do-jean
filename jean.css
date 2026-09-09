@@ -380,6 +380,400 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+}
+
+
+/* =========================
+   MENU
+========================= */
+
+.topo {
+    min-height: 700px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.35),
+            rgba(0,0,0,0.75)
+        ),
+        url("imagens/minecraft-paisagem.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    height: 80px;
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(0, 0, 0, 0.75);
+}
+
+nav h1 {
+    font-size: 28px;
+
+    text-shadow:
+        3px 3px 0 #000;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.menu a:hover {
+    color: #55d33c;
+}
+
+
+/* =========================
+   BANNER
+========================= */
+
+.banner {
+    min-height: 620px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.banner h2 {
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+    text-shadow:
+        4px 4px 0 #000;
+}
+
+.banner p {
+    font-size: 20px;
+
+    max-width: 650px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+.botao {
+    display: inline-block;
+
+    padding: 16px 30px;
+
+    background: #48a832;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    border: 3px solid #27631d;
+
+    box-shadow:
+        0 5px 0 #183e13;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: #5bc83f;
+
+    transform: translateY(3px);
+
+    box-shadow:
+        0 2px 0 #183e13;
+}
+
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.secao {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 80px 20px;
+}
+
+.secao > h2 {
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 45px;
+
+    text-shadow:
+        3px 3px 0 #000;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    background: #202020;
+
+    border: 3px solid #343434;
+
+    transition: 0.3s;
+
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #55c83d;
+}
+
+.card img {
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card div {
+    padding: 25px;
+}
+
+.card h3 {
+    color: #62d448;
+
+    font-size: 23px;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #ccc;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 18px;
+
+    background: #4ca936;
+
+    border: none;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.card button:hover {
+    background: #62c94b;
+}
+
+
+/* =========================
+   DESTAQUE
+========================= */
+
+.destaque {
+    min-height: 500px;
+
+    padding: 80px 10%;
+
+    display: flex;
+
+    align-items: center;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.2)
+        ),
+        url("imagens/minecraft-construcao.jpg");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+.texto {
+    max-width: 550px;
+}
+
+.texto h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+
+    text-shadow:
+        3px 3px 0 #000;
+}
+
+.texto p {
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #ddd;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   DICAS
+========================= */
+
+.dicas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.dica {
+    text-align: center;
+
+    background: #1e2b1e;
+
+    padding: 35px 25px;
+
+    border: 3px solid #304630;
+}
+
+.dica span {
+    font-size: 50px;
+
+    display: block;
+
+    margin-bottom: 15px;
+}
+
+.dica h3 {
+    color: #66d54a;
+
+    margin-bottom: 15px;
+}
+
+.dica p {
+    color: #ccc;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    text-align: center;
+
+    background: #080808;
+
+    color: #888;
+
+    padding: 35px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .banner h2 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dicas {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque {
+        padding: 60px 25px;
+    }
+}
 
 
 /* =========================
