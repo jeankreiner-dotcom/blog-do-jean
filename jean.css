@@ -30,6 +30,356 @@ body {
 
     margin: auto;
 }
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #111b12;
+    color: #ffffff;
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("https://images.unsplash.com/photo-1607513746994-51f730a3c0ec?auto=format&fit=crop&w=1800&q=85");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAV */
+
+nav {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    padding: 25px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h1 {
+    font-size: 28px;
+    text-shadow: 3px 3px #000;
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #65d63c;
+}
+
+/* HERO */
+
+.hero-content {
+    width: 90%;
+    max-width: 900px;
+
+    margin: auto;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+
+    text-shadow: 4px 4px #000;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+/* BOTÃO */
+
+.botao {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    background: #45a832;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    border: 3px solid #2b7020;
+
+    box-shadow: 0 5px 0 #1b4615;
+
+    transition: 0.2s;
+}
+
+.botao:hover {
+    background: #58c83d;
+    transform: translateY(2px);
+    box-shadow: 0 3px 0 #1b4615;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+.section {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: auto;
+    padding: 80px 0;
+}
+
+.section > h2 {
+    text-align: center;
+    font-size: 35px;
+
+    margin-bottom: 45px;
+
+    text-shadow: 3px 3px #000;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.card {
+    background: #1c2b1d;
+
+    border: 3px solid #334b35;
+
+    overflow: hidden;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    border-color: #55bd3c;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.card-content {
+    padding: 25px;
+}
+
+.card-content h3 {
+    font-size: 23px;
+
+    margin-bottom: 12px;
+
+    color: #69d84c;
+}
+
+.card-content p {
+    color: #d2d2d2;
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.card-content a {
+    color: #8bea6d;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* =========================
+   DICAS
+========================= */
+
+.dicas {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto 80px;
+
+    padding: 50px;
+
+    background: #243725;
+
+    border-left: 8px solid #55b83c;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.dicas h2 {
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+.dicas p {
+    line-height: 1.7;
+
+    color: #ddd;
+
+    margin-bottom: 20px;
+}
+
+.dicas ul {
+    list-style: none;
+
+    line-height: 2;
+
+    color: #e9e9e9;
+}
+
+.dicas img {
+    width: 100%;
+    height: 350px;
+
+    object-fit: cover;
+
+    border: 4px solid #172619;
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border: 4px solid #263b28;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+
+    border-color: #62d849;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+    background: #080d09;
+
+    text-align: center;
+
+    padding: 30px;
+
+    color: #aaa;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-content h2 {
+        font-size: 38px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .dicas {
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* =========================
